@@ -1,0 +1,251 @@
+﻿
+        html, body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+.swiper-container .swiper-slide.one {
+            background:url(../images/about_01.jpg) no-repeat;
+           background-size: cover;
+        }
+.swiper-container .swiper-slide.two{
+            background:url(../images/about_02.jpg) no-repeat;
+           background-size: cover;
+        }
+.swiper-container .swiper-slide.thre{
+            background:url(../images/about_03.jpg) no-repeat;
+            background-size: cover;
+        }
+.swiper-container .swiper-slide.four{
+            background:url(../images/about_04.jpg) no-repeat;
+            background-size: cover;
+        }
+
+/*三亚减肥营*/
+
+.swiper-container .swiper-slide.sone {
+            background:url(../images/sanya_01.jpg) no-repeat;
+           background-size: cover;
+        }
+.swiper-container .swiper-slide.stwo{
+            background:url(../images/sanya_02.jpg) no-repeat;
+           background-size: cover;
+        }
+.swiper-container .swiper-slide.sthre{
+            background:url(../images/sanya_03.jpg) no-repeat;
+            background-size: cover;
+        }
+.swiper-container .swiper-slide.sfour{
+            background:url(../images/sanya_04.jpg) no-repeat;
+            background-size: cover;
+        }
+.swiper-container .swiper-slide.sfive{
+            background:url(../images/sanya_05.jpg) no-repeat;
+            background-size: cover;
+        }
+.swiper-container .swiper-slide.ssix{
+            background:url(../images/sanya_06.jpg) no-repeat;
+            background-size: cover;
+        }
+.swiper-container .swiper-slide.sseven{
+            background:url(../images/sanya_07.jpg) no-repeat;
+            background-size: cover;
+ }
+
+/*动画效果*/
+ /*定义一个名字为lefteaseinAnimate动画，实现从页面的左边淡入页面效果*/
+@keyframes lefteaseinAnimate{
+    0%{ transform: translateX(-2000px); opacity: 0;}   /*在0%时设置文字在想X轴-2000px位移处（左边），透明度为0，也就是看不见文字*/
+    100%{ transform: translateX(0px); opacity: 1;}         /*在100%时设置文字在想X轴0px位移处，也就是原始布局的位置，透明度为1，也就是文字可以看见了*/
+}
+
+.xly{
+    animation: lefteaseinAnimate 1s ease 1;    /*调用已定义好的动画lefteaseinAnimate，全程运行时间1S，进入的速度曲线为ease，只播放一次*/
+    -webkit-animation: lefteaseinAnimate 1s ease 1;
+    -ms-animation: lefteaseinAnimate 1s ease 1;
+    -o-animation: lefteaseinAnimate 1s ease 1;
+    -moz-animation: lefteaseinAnimate 1s ease 1;
+    
+    /*规定动画的最后状态为结束状态*/
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode: forwards;  
+      -o-animation-fill-mode: forwards; 
+      -ms-animation-fill-mode: forwards;   
+      -moz-animation-fill-mode: forwards; 
+}
+.xly2{
+  webkit-animation: revolving 4s 0s infinite;
+  animation: revolving 4s 0s infinite;
+}
+@-webkit-keyframes revolving{
+  0.75%{
+    -webkit-transform: perspective(700px) rotateX(90deg);
+  }
+  87.5%{
+    -webkit-transform: perspective(700px) rotateX(0deg);
+  }
+  100%{
+    -webkit-transform: perspective(700px) rotateX(-90deg);
+  }
+}
+
+
+
+
+/*快速甩脂营*/
+
+.swiper-container .swiper-slide.szone {
+            background:url(../images/kssz_01.jpg) no-repeat;
+           background-size: cover;
+        }
+.swiper-container .swiper-slide.sztwo{
+            background:url(../images/kssz_02.jpg) no-repeat;
+           background-size: cover;
+        }
+.swiper-container .swiper-slide.szthre{
+            background:url(../images/kssz_03.jpg) no-repeat;
+            background-size: cover;
+        }
+.swiper-container .swiper-slide.szfour{
+            background:url(../images/kssz_04.jpg) no-repeat;
+            background-size: cover;
+        }
+.swiper-container .swiper-slide.szfive{
+            background:url(../images/kssz_05.jpg) no-repeat;
+            background-size: cover;
+        }
+.swiper-container .swiper-slide.szsix{
+            background:url(../images/kssz_06.jpg) no-repeat;
+            background-size: cover;
+        }
+.swiper-container .swiper-slide.szseven{
+            background:url(../images/kssz_07.jpg) no-repeat;
+            background-size: cover;
+ }
+.swiper-container .swiper-slide.szedit{
+            background:url(../images/kssz_08.jpg) no-repeat;
+            background-size: cover;
+ }
+.swiper-container .swiper-slide.sznine{
+            background:url(../images/kssz_09.jpg) no-repeat;
+            background-size: cover;
+ }
+.swiper-container .swiper-slide.szten{
+            background:url(../images/kssz_10.jpg) no-repeat;
+            background-size: cover;
+ }
+
+.ks_to2{
+ 
+   animation: lefteaseinAnimate 2s ease 1;    /*调用已定义好的动画lefteaseinAnimate，全程运行时间1S，进入的速度曲线为ease，只播放一次*/
+    -webkit-animation: lefteaseinAnimate 2s ease 1;
+    -ms-animation: lefteaseinAnimate 2s ease 1;
+    -o-animation: lefteaseinAnimate 2s ease 1;
+    -moz-animation: lefteaseinAnimate 2s ease 1;
+    
+    /*规定动画的最后状态为结束状态*/
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode: forwards;  
+      -o-animation-fill-mode: forwards; 
+      -ms-animation-fill-mode: forwards;   
+      -moz-animation-fill-mode: forwards; 
+
+}
+.ks_to3{
+ 
+   animation: lefteaseinAnimate 4s ease 1;    /*调用已定义好的动画lefteaseinAnimate，全程运行时间1S，进入的速度曲线为ease，只播放一次*/
+    -webkit-animation: lefteaseinAnimate 4s ease 1;
+    -ms-animation: lefteaseinAnimate 4s ease 1;
+    -o-animation: lefteaseinAnimate 4s ease 1;
+    -moz-animation: lefteaseinAnimate 4s ease 1;
+    
+    /*规定动画的最后状态为结束状态*/
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode: forwards;  
+      -o-animation-fill-mode: forwards; 
+      -ms-animation-fill-mode: forwards;   
+      -moz-animation-fill-mode: forwards; 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*头部开始*/
+header .head.header2{
+    position: relative;
+    z-index: 999;
+    background: rgba(51,51, 51, 0.3);
+   
+}
+header .muse.muse2 ul li {
+    color:#fff;
+}
+
+
+
+
+
+/*底部开始*/
+.fot.fot_xin {
+       position: fixed;
+    bottom: 0;
+    z-index: 999;
+    height: 30px;
+}
+.fot .footer.footer2{
+        line-height: 30px;
+    color: #fff;
+    text-align: center;
+  
+}
